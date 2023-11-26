@@ -19,9 +19,9 @@ Deve poder cadastrar um novo dog walker
     ...    details=Apto 28    
     ...    cnh=toretto.jpg
 
-
+    Start session
     Go to signup page
     Fill signup form    ${dog_walker}
     Submit signup form    
     Popup should be     Recebemos o seu cadastro e em breve retornaremos o contato.
-
+    Finish session
