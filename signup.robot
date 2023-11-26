@@ -8,7 +8,7 @@ Library             Browser
 Deve poder cadastrar um novo dog walker
     ${name}             Set Variable    Nicolas Kumabe
     ${email}            Set Variable    nicolas@gmail.com
-    ${cpf}              Set Variable    000000014141
+    ${cpf}              Set Variable    00000014141
     ${cep}              Set Variable    04534011
     ${addressStreet}    Set Variable    Rua Joaquim Floriano
     ${addressDistrict}  Set Variable    Itaim Bibi
@@ -37,3 +37,10 @@ Deve poder cadastrar um novo dog walker
     Fill Text    css=input[name=addressDetails]    ${addressDetails}
 
     Upload File By Selector    css=input[type=file]    ${EXECDIR}/toretto.jpg
+
+    Click    css=.button-register
+
+
+    Wait For Elements State    css=.swal2-html-container    visible    5
+    Get Text                   css=.swal2-html-container    equal      Recebemos o seu cadastro e em breve retornaremos o contato.
+    
