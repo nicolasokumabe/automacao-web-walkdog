@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231126 13:10:38.372" rpa="false" schemaversion="4">
-<suite id="s1" name="Signup" source="/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/signup.robot">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231126 13:35:35.934" rpa="false" schemaversion="4">
+<suite id="s1" name="Signup" source="/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/tests/signup.robot">
 <test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="8">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${dog_walker}</var>
@@ -15,28 +15,28 @@
 <arg>details=Apto 28</arg>
 <arg>cnh=toretto.jpg</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20231126 13:10:38.951" level="INFO">${dog_walker} = {'name': 'Nicolas Kumabe', 'email': 'nicolas@gmail.com', 'cpf': '00000014141', 'cep': '04534011', 'street': 'Rua Joaquim Floriano', 'district': 'Itaim Bibi', 'city_uf': 'São Paulo/SP', 'number': '1000...</msg>
-<status status="PASS" starttime="20231126 13:10:38.950" endtime="20231126 13:10:38.951"/>
+<msg timestamp="20231126 13:35:36.390" level="INFO">${dog_walker} = {'name': 'Nicolas Kumabe', 'email': 'nicolas@gmail.com', 'cpf': '00000014141', 'cep': '04534011', 'street': 'Rua Joaquim Floriano', 'district': 'Itaim Bibi', 'city_uf': 'São Paulo/SP', 'number': '1000...</msg>
+<status status="PASS" starttime="20231126 13:35:36.390" endtime="20231126 13:35:36.390"/>
 </kw>
-<kw name="Go to signup page">
+<kw name="Go to signup page" library="signup">
 <kw name="New Browser" library="Browser">
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20231126 13:10:38.951" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/a86cae40-6c25-4024-9bb4-191e61f83a0e"}</msg>
-<msg timestamp="20231126 13:10:39.290" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/a86cae40-6c25-4024-9bb4-191e61f83a0e"}</msg>
-<status status="PASS" starttime="20231126 13:10:38.951" endtime="20231126 13:10:39.290"/>
+<msg timestamp="20231126 13:35:36.391" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/cb4d95bb-3572-4069-9c0a-7b2580054200"}</msg>
+<msg timestamp="20231126 13:35:36.659" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/cb4d95bb-3572-4069-9c0a-7b2580054200"}</msg>
+<status status="PASS" starttime="20231126 13:35:36.391" endtime="20231126 13:35:36.659"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>https://walkdog.vercel.app/signup</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20231126 13:10:40.094" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
-<msg timestamp="20231126 13:10:40.094" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20231126 13:10:39.290" endtime="20231126 13:10:40.094"/>
+<msg timestamp="20231126 13:35:37.294" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
+<msg timestamp="20231126 13:35:37.294" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20231126 13:35:36.659" endtime="20231126 13:35:37.294"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>form h1</arg>
@@ -45,8 +45,8 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20231126 13:10:40.140" level="INFO">Waited for Element with selector form h1 at state visible</msg>
-<status status="PASS" starttime="20231126 13:10:40.094" endtime="20231126 13:10:40.140"/>
+<msg timestamp="20231126 13:35:37.328" level="INFO">Waited for Element with selector form h1 at state visible</msg>
+<status status="PASS" starttime="20231126 13:35:37.294" endtime="20231126 13:35:37.329"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>form h1</arg>
@@ -56,12 +56,12 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.174" level="INFO">Text: 'Faça seu cadastro'</msg>
-<status status="PASS" starttime="20231126 13:10:40.141" endtime="20231126 13:10:40.174"/>
+<msg timestamp="20231126 13:35:37.355" level="INFO">Text: 'Faça seu cadastro'</msg>
+<status status="PASS" starttime="20231126 13:35:37.329" endtime="20231126 13:35:37.355"/>
 </kw>
-<status status="PASS" starttime="20231126 13:10:38.951" endtime="20231126 13:10:40.174"/>
+<status status="PASS" starttime="20231126 13:35:36.390" endtime="20231126 13:35:37.355"/>
 </kw>
-<kw name="Fill signup form">
+<kw name="Fill signup form" library="signup">
 <arg>${dog_walker}</arg>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=name]</arg>
@@ -69,8 +69,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.175" level="INFO">Fills the text 'Nicolas Kumabe' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.175" endtime="20231126 13:10:40.213"/>
+<msg timestamp="20231126 13:35:37.356" level="INFO">Fills the text 'Nicolas Kumabe' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.356" endtime="20231126 13:35:37.388"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=email]</arg>
@@ -78,8 +78,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.214" level="INFO">Fills the text 'nicolas@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.213" endtime="20231126 13:10:40.245"/>
+<msg timestamp="20231126 13:35:37.388" level="INFO">Fills the text 'nicolas@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.388" endtime="20231126 13:35:37.413"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=cpf]</arg>
@@ -87,8 +87,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.246" level="INFO">Fills the text '00000014141' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.245" endtime="20231126 13:10:40.277"/>
+<msg timestamp="20231126 13:35:37.414" level="INFO">Fills the text '00000014141' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.413" endtime="20231126 13:35:37.435"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=cep]</arg>
@@ -96,15 +96,15 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.277" level="INFO">Fills the text '04534011' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.277" endtime="20231126 13:10:40.301"/>
+<msg timestamp="20231126 13:35:37.436" level="INFO">Fills the text '04534011' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.435" endtime="20231126 13:35:37.457"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>css=input[type=button][value$=CEP]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231126 13:10:40.301" endtime="20231126 13:10:40.366"/>
+<status status="PASS" starttime="20231126 13:35:37.457" endtime="20231126 13:35:37.517"/>
 </kw>
 <kw name="Get Property" library="Browser">
 <arg>css=input[name=addressStreet]</arg>
@@ -115,8 +115,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.788" level="INFO">Property: 'Rua Joaquim Floriano'</msg>
-<status status="PASS" starttime="20231126 13:10:40.366" endtime="20231126 13:10:40.788"/>
+<msg timestamp="20231126 13:35:37.935" level="INFO">Property: 'Rua Joaquim Floriano'</msg>
+<status status="PASS" starttime="20231126 13:35:37.517" endtime="20231126 13:35:37.935"/>
 </kw>
 <kw name="Get Property" library="Browser">
 <arg>css=input[name=addressDistrict]</arg>
@@ -127,8 +127,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.799" level="INFO">Property: 'Itaim Bibi'</msg>
-<status status="PASS" starttime="20231126 13:10:40.789" endtime="20231126 13:10:40.799"/>
+<msg timestamp="20231126 13:35:37.944" level="INFO">Property: 'Itaim Bibi'</msg>
+<status status="PASS" starttime="20231126 13:35:37.935" endtime="20231126 13:35:37.944"/>
 </kw>
 <kw name="Get Property" library="Browser">
 <arg>css=input[name=addressCityUf]</arg>
@@ -139,8 +139,8 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the ``property`` of the element found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.813" level="INFO">Property: 'São Paulo/SP'</msg>
-<status status="PASS" starttime="20231126 13:10:40.799" endtime="20231126 13:10:40.813"/>
+<msg timestamp="20231126 13:35:37.953" level="INFO">Property: 'São Paulo/SP'</msg>
+<status status="PASS" starttime="20231126 13:35:37.945" endtime="20231126 13:35:37.953"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=addressNumber]</arg>
@@ -148,8 +148,8 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.813" level="INFO">Fills the text '1000' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.813" endtime="20231126 13:10:40.839"/>
+<msg timestamp="20231126 13:35:37.954" level="INFO">Fills the text '1000' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.953" endtime="20231126 13:35:37.975"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>css=input[name=addressDetails]</arg>
@@ -157,30 +157,30 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:40.840" level="INFO">Fills the text 'Apto 28' in the given field.</msg>
-<status status="PASS" starttime="20231126 13:10:40.840" endtime="20231126 13:10:40.863"/>
+<msg timestamp="20231126 13:35:37.975" level="INFO">Fills the text 'Apto 28' in the given field.</msg>
+<status status="PASS" starttime="20231126 13:35:37.975" endtime="20231126 13:35:37.995"/>
 </kw>
 <kw name="Upload File By Selector" library="Browser">
 <arg>css=input[type=file]</arg>
-<arg>${EXECDIR}/${dog_walker}[cnh]</arg>
+<arg>${EXECDIR}/resources/fixtures/${dog_walker}[cnh]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Uploads file from `path` to file input element matched by selector.</doc>
-<status status="PASS" starttime="20231126 13:10:40.863" endtime="20231126 13:10:40.884"/>
+<status status="PASS" starttime="20231126 13:35:37.995" endtime="20231126 13:35:38.011"/>
 </kw>
-<status status="PASS" starttime="20231126 13:10:40.174" endtime="20231126 13:10:40.884"/>
+<status status="PASS" starttime="20231126 13:35:37.356" endtime="20231126 13:35:38.011"/>
 </kw>
-<kw name="Submit signup form">
+<kw name="Submit signup form" library="signup">
 <kw name="Click" library="Browser">
 <arg>css=.button-register</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20231126 13:10:40.885" endtime="20231126 13:10:40.949"/>
+<status status="PASS" starttime="20231126 13:35:38.012" endtime="20231126 13:35:38.062"/>
 </kw>
-<status status="PASS" starttime="20231126 13:10:40.884" endtime="20231126 13:10:40.950"/>
+<status status="PASS" starttime="20231126 13:35:38.011" endtime="20231126 13:35:38.062"/>
 </kw>
-<kw name="Popup should be">
+<kw name="Popup should be" library="signup">
 <arg>Recebemos o seu cadastro e em breve retornaremos o contato.</arg>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.swal2-html-container</arg>
@@ -189,8 +189,8 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20231126 13:10:41.745" level="INFO">Waited for Element with selector css=.swal2-html-container at state visible</msg>
-<status status="PASS" starttime="20231126 13:10:40.950" endtime="20231126 13:10:41.745"/>
+<msg timestamp="20231126 13:35:38.854" level="INFO">Waited for Element with selector css=.swal2-html-container at state visible</msg>
+<status status="PASS" starttime="20231126 13:35:38.062" endtime="20231126 13:35:38.854"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>css=.swal2-html-container</arg>
@@ -200,15 +200,15 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20231126 13:10:41.760" level="INFO">Text: 'Recebemos o seu cadastro e em breve retornaremos o contato.'</msg>
-<status status="PASS" starttime="20231126 13:10:41.745" endtime="20231126 13:10:41.760"/>
+<msg timestamp="20231126 13:35:38.871" level="INFO">Text: 'Recebemos o seu cadastro e em breve retornaremos o contato.'</msg>
+<status status="PASS" starttime="20231126 13:35:38.854" endtime="20231126 13:35:38.871"/>
 </kw>
-<status status="PASS" starttime="20231126 13:10:40.950" endtime="20231126 13:10:41.761"/>
+<status status="PASS" starttime="20231126 13:35:38.062" endtime="20231126 13:35:38.872"/>
 </kw>
-<status status="PASS" starttime="20231126 13:10:38.946" endtime="20231126 13:10:41.761"/>
+<status status="PASS" starttime="20231126 13:35:36.387" endtime="20231126 13:35:38.872"/>
 </test>
 <doc>Suite de testes de cadastro de dog walker</doc>
-<status status="PASS" starttime="20231126 13:10:38.372" endtime="20231126 13:10:41.889"/>
+<status status="PASS" starttime="20231126 13:35:35.934" endtime="20231126 13:35:38.957"/>
 </suite>
 <statistics>
 <total>
