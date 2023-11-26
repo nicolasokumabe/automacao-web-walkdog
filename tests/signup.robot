@@ -44,8 +44,8 @@ Não deve cadastrar se o cfp for incorreto
     [Tags]    cpf_inv
 
     ${dog_walker}        Create Dictionary    
-    ...    name=Nicolas Kumabe
-    ...    email=nicolas@gmail.com    
+    ...    name=Chris Bumstead
+    ...    email=cbum@gmail.com    
     ...    cpf=000000141aa    
     ...    cep=04534011    
     ...    street=Rua Joaquim Floriano    
@@ -53,7 +53,7 @@ Não deve cadastrar se o cfp for incorreto
     ...    city_uf=São Paulo/SP    
     ...    number=1000    
     ...    details=Apto 28    
-    ...    cnh=toretto.jpg
+    ...    cnh=cbum.jpg
 
     Go to signup page
     Fill signup form    ${dog_walker}
@@ -64,8 +64,8 @@ Deve poder cadastrar um novo dog walker que sabe cuidar de pets
     [Tags]    aservice
 
     ${dog_walker}        Create Dictionary    
-    ...    name=Nicolas Kumabe
-    ...    email=nicolas@gmail.com    
+    ...    name=Ramon Dino
+    ...    email=dino@gmail.com    
     ...    cpf=00000014141    
     ...    cep=04534011    
     ...    street=Rua Joaquim Floriano    
@@ -73,11 +73,11 @@ Deve poder cadastrar um novo dog walker que sabe cuidar de pets
     ...    city_uf=São Paulo/SP    
     ...    number=1000    
     ...    details=Apto 28    
-    ...    cnh=toretto.jpg    
-    ...    additional_service=Cuidar
+    ...    cnh=dino.jpg    
 
     Go to signup page
     Fill signup form    ${dog_walker}
+    Additional Service    Cuidar
     Submit signup form    
     Popup should be     Recebemos o seu cadastro e em breve retornaremos o contato.
 
@@ -85,8 +85,8 @@ Deve poder cadastrar um novo dog walker que sabe adestrar pets
     [Tags]    aservice
 
     ${dog_walker}        Create Dictionary    
-    ...    name=Nicolas Kumabe
-    ...    email=nicolas@gmail.com    
+    ...    name=Rodrigo Góes
+    ...    email=fakenaty@gmail.com    
     ...    cpf=00000014141    
     ...    cep=04534011    
     ...    street=Rua Joaquim Floriano    
@@ -94,10 +94,10 @@ Deve poder cadastrar um novo dog walker que sabe adestrar pets
     ...    city_uf=São Paulo/SP    
     ...    number=1000    
     ...    details=Apto 28    
-    ...    cnh=toretto.jpg    
-    ...    additional_service=Adestrar
+    ...    cnh=goes.jpg    
 
     Go to signup page
     Fill signup form    ${dog_walker}
+    Additional Service    Adestrar
     Submit signup form    
     Popup should be     Recebemos o seu cadastro e em breve retornaremos o contato.
