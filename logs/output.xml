@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231126 08:42:58.929" rpa="false" schemaversion="4">
-<suite id="s1" name="Home" source="/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/home.robot">
-<test id="s1-t1" name="Home page deve estar online" line="7">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on linux)" generated="20231126 09:01:45.742" rpa="false" schemaversion="4">
+<suite id="s1" name="Signup" source="/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/signup.robot">
+<test id="s1-t1" name="Deve poder cadastrar um novo dog walker" line="7">
 <kw name="New Browser" library="Browser">
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20231126 08:42:59.492" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/f9edbd01-a811-441a-b0e1-846a8777ae15"}</msg>
-<msg timestamp="20231126 08:42:59.801" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/f9edbd01-a811-441a-b0e1-846a8777ae15"}</msg>
-<status status="PASS" starttime="20231126 08:42:59.491" endtime="20231126 08:42:59.801"/>
+<msg timestamp="20231126 09:01:46.190" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/e5333512-6225-4c6f-a6cb-e24a675ad646"}</msg>
+<msg timestamp="20231126 09:01:46.448" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/traces/e5333512-6225-4c6f-a6cb-e24a675ad646"}</msg>
+<status status="PASS" starttime="20231126 09:01:46.189" endtime="20231126 09:01:46.448"/>
 </kw>
 <kw name="New Page" library="Browser">
-<arg>https://walkdog.vercel.app</arg>
+<arg>https://walkdog.vercel.app/signup</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20231126 08:43:00.492" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app</msg>
-<msg timestamp="20231126 08:43:00.492" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20231126 08:42:59.801" endtime="20231126 08:43:00.493"/>
+<msg timestamp="20231126 09:01:47.511" level="INFO">Successfully initialized new page object and opened url: https://walkdog.vercel.app/signup</msg>
+<msg timestamp="20231126 09:01:47.511" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20231126 09:01:46.448" endtime="20231126 09:01:47.511"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>form h1</arg>
+<arg>visible</arg>
+<arg>5000</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231126 09:01:47.551" level="INFO">Waited for Element with selector form h1 at state visible</msg>
+<status status="PASS" starttime="20231126 09:01:47.512" endtime="20231126 09:01:47.551"/>
 </kw>
 <kw name="Get Text" library="Browser">
-<arg>h1</arg>
+<arg>form h1</arg>
 <arg>equal</arg>
-<arg>Cuidado e diversão em cada passo</arg>
+<arg>Faça seu cadastro</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20231126 08:43:00.619" level="INFO">Text: 'Cuidado e diversão em cada passo'</msg>
-<status status="PASS" starttime="20231126 08:43:00.493" endtime="20231126 08:43:00.619"/>
+<msg timestamp="20231126 09:01:47.578" level="INFO">Text: 'Faça seu cadastro'</msg>
+<status status="PASS" starttime="20231126 09:01:47.551" endtime="20231126 09:01:47.578"/>
 </kw>
-<kw name="Take Screenshot" library="Browser">
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20231126 08:43:00.756" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20231126 08:43:00.619" endtime="20231126 08:43:00.756"/>
-</kw>
-<status status="PASS" starttime="20231126 08:42:59.488" endtime="20231126 08:43:00.756"/>
+<status status="PASS" starttime="20231126 09:01:46.186" endtime="20231126 09:01:47.578"/>
 </test>
-<doc>Suite de testes da home page</doc>
-<status status="PASS" starttime="20231126 08:42:58.929" endtime="20231126 08:43:00.867"/>
+<doc>Suite de testes de cadastro de dog walker</doc>
+<status status="PASS" starttime="20231126 09:01:45.743" endtime="20231126 09:01:47.666"/>
 </suite>
 <statistics>
 <total>
@@ -50,7 +54,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
 </suite>
 </statistics>
 <errors>
