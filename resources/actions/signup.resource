@@ -26,6 +26,9 @@ Fill signup form
     Fill Text    css=input[name=addressNumber]     ${dog_walker}[number]
     Fill Text    css=input[name=addressDetails]    ${dog_walker}[details]
 
+    Click    xpath=//span[text()="${dog_walker}[additional_service]"]/..
+    Take Screenshot        selector=//span[text()="${dog_walker}[additional_service]"]/..
+
     Upload File By Selector    css=input[type=file]    ${EXECDIR}/resources/fixtures/${dog_walker}[cnh]
 
 Submit signup form
