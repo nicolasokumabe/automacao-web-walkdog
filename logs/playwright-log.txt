@@ -1,0 +1,49 @@
+{"level":30,"time":"2023-11-26T11:42:59.399Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Listening on 45551"}
+{"level":30,"time":"2023-11-26T11:42:59.485Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:42:59.486Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:42:59.490Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:42:59.490Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:42:59.493Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-11-26T11:42:59.798Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Adding browser to stack: chromium, version: 120.0.6099.28"}
+{"level":30,"time":"2023-11-26T11:42:59.799Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-11-26T11:42:59.799Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2023-11-26T11:42:59.803Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-11-26T11:42:59.804Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-11-26T11:42:59.819Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active context"}
+{"level":30,"time":"2023-11-26T11:43:00.118Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Video path: undefined"}
+{"level":30,"time":"2023-11-26T11:43:00.118Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active page"}
+{"level":30,"time":"2023-11-26T11:43:00.490Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method newPage"}
+{"level":30,"time":"2023-11-26T11:43:00.526Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-26T11:43:00.527Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Strict mode is enabled, find Locator with h1 in page."}
+{"level":30,"time":"2023-11-26T11:43:00.618Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Retrieved text for element h1 containing Cuidado e diversão em cada passo"}
+{"level":30,"time":"2023-11-26T11:43:00.618Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-26T11:43:00.621Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-11-26T11:43:00.621Z","pid":5076,"hostname":"nicolasokumabe-desktop","Take screenshot with options: ":{"path":"/home/nicolasokumabe/Documents/GitHub/QAx/projects/walkdog-robot/logs/browser/screenshot/robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2023-11-26T11:43:00.754Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-11-26T11:43:00.762Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.765Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.766Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.768Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.770Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active context"}
+{"level":30,"time":"2023-11-26T11:43:00.771Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changing current active page: page=9ad05b69-1fe5-41c6-a6c5-7eb13da9b84c"}
+{"level":30,"time":"2023-11-26T11:43:00.771Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active page"}
+{"level":30,"time":"2023-11-26T11:43:00.779Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.784Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.787Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-11-26T11:43:00.788Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-11-26T11:43:00.792Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-11-26T11:43:00.792Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-11-26T11:43:00.794Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changing current active page: page=9ad05b69-1fe5-41c6-a6c5-7eb13da9b84c"}
+{"level":30,"time":"2023-11-26T11:43:00.794Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active page"}
+{"level":30,"time":"2023-11-26T11:43:00.798Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.800Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.802Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active context"}
+{"level":30,"time":"2023-11-26T11:43:00.802Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changing current active page: page=9ad05b69-1fe5-41c6-a6c5-7eb13da9b84c"}
+{"level":30,"time":"2023-11-26T11:43:00.802Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Changed active page"}
+{"level":30,"time":"2023-11-26T11:43:00.809Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-11-26T11:43:00.836Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Removed page=516454df-a3f3-466b-af77-503778607b52 from context=bd9c8dfb-57b8-423d-8b51-98223401090d page stack"}
+{"level":30,"time":"2023-11-26T11:43:00.865Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-11-26T11:43:00.870Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.871Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-26T11:43:00.891Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-11-26T11:43:02.014Z","pid":5076,"hostname":"nicolasokumabe-desktop","msg":"End of node method closeAllBrowsers"}
